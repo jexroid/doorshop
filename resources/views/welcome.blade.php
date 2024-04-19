@@ -1,60 +1,25 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="bumblebee">
+@extends('layout')
 
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  <script type="module" crossorigin src="{{ asset('js/index.js') }}"></script>
-  <link rel="stylesheet" crossorigin href="{{ asset('css/index.css') }}">
-</head>
+@section('title', 'wpercian')
 
-<body class="overflow-x-hidden">
-    <header>
-        <div class="navbar bg-base-100 shadow-lg rounded-3xl fixed z-10">
-            <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h7" />
-                        </svg>
-                    </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                        <li><a>Homepage</a></li>
-                        <li><a>Portfolio</a></li>
-                        <li><a>About</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="navbar-center">
-                <a class="btn btn-ghost text-xl">daisyUI</a>
-            </div>
-        </div>
-    </header>
-    <div id="cursor"></div>
+@section('assets')
+    <script type="module" crossorigin src="{{ asset('js/index.js') }}"></script>
+    <link rel="stylesheet" crossorigin href="{{ asset('css/index.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+@endsection
+
+@section('content')
     <main>
-        <div class="w-full min-h-16"> </div>
+        <div id="particles-js"></div>
         <section class="">
-            <div id="mute" class="btn">
-                biseda
-            </div>
-
-
-            <div class="w-28 h-28 bg-[#f9dc03c7] blur-3xl absolute right-96 top-28 hidden lg:block rounded-badge"></div>
-            <div class="w-44 h-28 bg-[#f9d403ce] blur-3xl absolute left-12 bottom-48 hidden lg:block rounded-badge"></div>
             
-
-
-            <!-- sliders -->
+            <div class="w-28 h-28 bg-[#f9dc03c7] blur-3xl absolute right-96 top-28 hidden lg:block rounded-badge">
+            </div>
+            <div class="w-44 h-28 bg-[#f9d403ce] blur-3xl absolute left-12 bottom-48 hidden lg:block rounded-badge">
+            </div>
             <div class="flex justify-center items-centers mx-10 flex-col lg:flex-row">
                 <div class="swiper w-72 h-72 rounded-full image">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <img class="swiper-slide"
                             src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
                         <img class="swiper-slide"
@@ -62,17 +27,11 @@
                         <img class="swiper-slide"
                             src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
                     </div>
-                    <!-- If we need pagination -->
                     <div class="swiper-pagination"></div>
-
-                    <!-- If we need scrollbar -->
                 </div>
-                <!-- slider -->
-
                 <div class="flex justify-center items-center">
                     <div class="p-6 min-h-max container">
                         <div class="flex max-w-7xl flex-col gap-2 items-center justify-center">
-                            <!-- TODO: replace these two tags in english -->
                             <div class="text-center p-2">
                                 <h1 class="text-4xl font-bold ln mb-3 welcome" dir="rtl">خوش آمدید</h1>
                                 <p class="welcome mx-auto mt-5 text-gray-400 md:mt-8 md:max-w-lg md:text-center md:text-xl"
@@ -80,15 +39,13 @@
                                     به این سایت دمو خوش آمدیدما ایجا در میفروشیم و عاشق در هستیم ما
                                     دوست داریم کمک کنیم و خیلی کمک کنیم که در خدتون رو پیدا کنیم
                                 </p>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         </section>
-        <section class="bg-[#F9DB03] pb-12">
+        <section id="shop" class="bg-[#F9DB03] pb-12">
             <div class="">
                 <svg id="visual" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
@@ -184,7 +141,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                        <a href=""
+                            class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                             <div class="card w-56 bg-base-100 shadow-xl">
                                 <figure>
                                     <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -199,7 +157,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                        <a href=""
+                            class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                             <div class="card w-56 bg-base-100 shadow-xl">
                                 <figure>
                                     <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -214,7 +173,8 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                        <a href=""
+                            class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                             <div class="card w-56 bg-base-100 shadow-xl">
                                 <figure>
                                     <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
@@ -274,14 +234,17 @@
                 <div class="w-full text-end px-8 container">
                     <h1 class="text-3xl mb-8 font-bold tracking-tight text-gray-900 md:text-center sm:text-4xl/snug md:text-7xl/snug lg:text-5xl/loose welcome wsau text-right"
                         dir="rtl">ویژگی ما چیست؟</h1><br>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با جرات
+                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
+                        جرات
                         بگوییم که ما بهترین برچسب ها و
                         باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیم</p>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با جرات
+                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
+                        جرات
                         بگوییم که ما بهترین برچسب ها و
                         باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیsdfsadfasd fasd fasd f
                         asdf asdf asdfasd fasd fasd fasdh filasdh ifhasuildh failshd م</p>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با جرات
+                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
+                        جرات
                         بگوییم که ما بهترین برچسب ها و
                         باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیم</p>
                     <p class="wsau text-right" dir="rtl">چوب ما بهرتین چوب میباشد</p>
@@ -289,11 +252,8 @@
                     <div class="my-16 flex flex-col justify-center items-center lg:flex-row gap-10"
                         data-aos="fade-down-right">
                         <div class="w-48 atropos my-atropos shadow-lg">
-                            <!-- scale container (required) -->
                             <div class="atropos-scale">
-                                <!-- rotate container (required) -->
                                 <div class="atropos-rotate animate-glow">
-                                    <!-- inner container (required) -->
                                     <div data-atropos-offset="-10"
                                         class="absolute -bottom-3 -left-7 w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-yellow-400 border-black border-2 z-30">
                                     </div>
@@ -324,11 +284,8 @@
                             </p>
                         </div>
                         <div class="w-48 atropos my-atropos-2 shadow-lg">
-                            <!-- scale container (required) -->
                             <div class="atropos-scale">
-                                <!-- rotate container (required) -->
                                 <div class="atropos-rotate animate-glow">
-                                    <!-- inner container (required) -->
                                     <div data-atropos-offset="-10"
                                         class="absolute -bottom-3 -left-7 w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-yellow-400 border-black border-2 z-30">
                                     </div>
@@ -348,13 +305,9 @@
                     </div>
                     <div class="mt-36 mb-2 flex flex-col justify-center items-center lg:flex-row gap-10"
                         data-aos="fade-down-right">
-
                         <div class="w-48 atropos my-atropos-3 shadow-lg">
-                            <!-- scale container (required) -->
                             <div class="atropos-scale">
-                                <!-- rotate container (required) -->
                                 <div class="atropos-rotate animate-glow">
-                                    <!-- inner container (required) -->
                                     <div data-atropos-offset="-10"
                                         class="absolute -bottom-3 -left-7 w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-yellow-400 border-black border-2 z-30">
                                     </div>
@@ -414,26 +367,22 @@
                     </g>
                 </svg>
                 <div class="flex justify-center items-center">
-                    <div class="stats stats-vertical lg:stats-horizontal shadow w-3/4">
-
+                    <div class="stats stats-vertical lg:stats-horizontal w-3/4">
                         <div class="stat">
                             <div class="stat-title">مشتریان ما</div>
                             <div class="stat-value">31K</div>
                             <div class="stat-desc">Jan 1st - Feb 1st</div>
                         </div>
-
                         <div class="stat">
                             <div class="stat-title">فروش ماهانه</div>
                             <div class="stat-value">4,200 $</div>
                             <div class="stat-desc">↗︎ 400 (22%)</div>
                         </div>
-
                         <div class="stat">
                             <div class="stat-title">سفارشات ما</div>
                             <div class="stat-value">1,200</div>
                             <div class="stat-desc">↘︎ 90 (14%)</div>
                         </div>
-
                     </div>
                 </div>
         </section>
@@ -474,24 +423,53 @@
                     fill="#f9db03" id="lob10"></path>
             </g>
         </svg>
-        <footer class="footer overflow-hidden footer-center p-10 bg-primary text-primary-content mt-3">
-            <aside>
-                <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                    clip-rule="evenodd" class="inline-block shoplist fill-current">
-                    <path
-                        d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z">
-                    </path>
-                </svg>
-                <p class="font-bold">
-                    ساخته شده توسط تیم جکسروید <br>
-                </p>
-                <p>Copyright © 2024 -است wpcpersian تمامی حقوق مربوط سایت </p>
-            </aside>
-
+        <footer class="bg-white overflow-y-hidden rounded-t-2xl text-black p-4 max-w-full">
+            <div class="footer footer-center">
+                <div class="grid grid-flow-col gap-6 mt-8 px-2">
+                    <a href="/about" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">درباره
+                        ما</a>
+                    <a href="contact" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">ارتباط
+                        با ما</a>
+                    <a href="/laws" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">قوانین
+                        سایت</a>
+                </div>
+                <div>
+                    <div class="flex justify-center space-x-8">
+                        <a href="https://wa.me/YOURNUMBER"
+                            class="transition-all duration-100 ease-in-out text-black hover:-translate-y-4">
+                            <i class="fab fa-whatsapp fa-2x"></i>
+                        </a>
+                        <a href="tel:YOURNUMBER"
+                            class=" transition-all duration-100 ease-in-out text-black hover:-translate-y-4">
+                            <i class="fas fa-phone-alt fa-2x"></i>
+                        </a>
+                        <a href="https://instagram.com/YOURUSERNAME"
+                            class="transition-all duration-100 ease-in-out text-black hover:-translate-y-4">
+                            <i class="fab fa-instagram fa-2x"></i>
+                        </a>
+                        <a href="https://github.com/YOURUSERNAME"
+                            class="transition-all duration-100 ease-in-out text-black hover:-translate-y-4">
+                            <i class="fab fa-github fa-2x"></i>
+                        </a>
+                        <a href="https://t.me/YOURUSERNAME"
+                            class="transition-all duration-100 ease-in-out text-black hover:-translate-y-4">
+                            <i class="fab fa-telegram-plane fa-2x"></i>
+                        </a>
+                    </div>
+                    <div class="flex justify-start items-center">
+                        <aside>
+                            <!-- TODO: 2024 should be dynamic using php -->
+                            <p class=" hover:text-amber-200 mr-4 mt-8">
+                                Copyright © 2024 - محفوظ است wpercian تمامی حقوق مربوط به سایت
+                            </p>
+                        </aside>
+                    </div>
+                </div>
         </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", { "particles": { "number": { "value": 133, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ff7800" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 6 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 4.008530152163807, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": false, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "bubble" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 121.81158184520176, "size": 8.120772123013452, "duration": 7.7959412380929125, "opacity": 0.9014057056544931, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
+    </script>
 
-
-</body>
-
-</html>
+@endsection
