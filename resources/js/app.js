@@ -15,11 +15,11 @@ let musicbackground = new Howl({
 })
 
 
-
-buttons.forEach(el => el.addEventListener('click', () => {
+document.addEventListener('click', () => {
     sound.play()
     navigator.vibrate(40)
-}));
+})
+
 let mutebutton = document.getElementById('mute')
 let mute_status = false
 window.addEventListener('load', function () {

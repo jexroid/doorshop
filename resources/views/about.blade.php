@@ -10,9 +10,9 @@
     <link rel="stylesheet" crossorigin href="{{ asset('css/about.css') }}">
 </head>
 
-<body class="bg-white">
+<body class="bg-white" style="overflow-x: hidden;">
     <section>
-        <div class="hero " style="background-image: url(/img/img4.jpg);">
+        <div class="hero" style="background-image: url(/img/img4.jpg);">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center text-neutral-content">
                 <div class="max-w-md">
@@ -177,7 +177,7 @@
         </div>
 
     </section>
-    <footer class="footer footer-center p-10 bg-primary text-primary-content mt-3">
+    <footer class="footer footer-center p-10 bg-primary text-primary-content mt-3 overflow-x-hidden">
         <aside>
             <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                 fill-rule="evenodd" clip-rule="evenodd" class="inline-block fill-current">

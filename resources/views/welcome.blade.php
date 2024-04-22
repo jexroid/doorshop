@@ -18,14 +18,12 @@
             <div class="w-44 h-28 bg-[#f9d403ce] blur-3xl absolute left-12 bottom-48 hidden lg:block rounded-badge">
             </div>
             <div class="flex justify-center items-centers mx-10 flex-col lg:flex-row">
-                <div class="swiper w-72 h-72 rounded-full image">
+                <div class="swiper w-72 h-72 rounded-full image border border-black">
                     <div class="swiper-wrapper">
                         <img class="swiper-slide"
-                            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                            src="/img/photo_2024-04-22_21-31-19.jpg" />
                         <img class="swiper-slide"
-                            src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" alt="Shoes" />
-                        <img class="swiper-slide"
-                            src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="Shoes" />
+                            src="/img/photo_2024-04-22_21-31-25.jpg" />
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -33,11 +31,10 @@
                     <div class="p-6 min-h-max container">
                         <div class="flex max-w-7xl flex-col gap-2 items-center justify-center">
                             <div class="text-center p-2">
-                                <h1 class="text-4xl font-bold ln mb-3 welcome" dir="rtl">خوش آمدید</h1>
+                                <h1 class="text-4xl font-bold mb-3 welcome" dir="rtl">شرکت <b>WPERCIANC</b> تولید کننده ی چوب پلاستیک (پلی وود)</h1>
                                 <p class="welcome mx-auto mt-5 text-gray-400 md:mt-8 md:max-w-lg md:text-center md:text-xl"
                                     dir="rtl">
-                                    به این سایت دمو خوش آمدیدما ایجا در میفروشیم و عاشق در هستیم ما
-                                    دوست داریم کمک کنیم و خیلی کمک کنیم که در خدتون رو پیدا کنیم
+                                    شرکت wpercianc یکی از بزرگترین تولید کنندگان بزرگ صنعت چوب پلاستیک (پلی وود) با بیش از 15 سال سابقه در این صنعت در ایران است که با بروز ترین ماشین آلات دنیا و نیرو های مجرب با بالا ترین کیفیت با کشور های همسایه و تولید کنندگان این صنعت در سر تا سر جهان را ظرفیت دارد 
                                 </p>
                             </div>
                         </div>
@@ -233,22 +230,11 @@
             <div class="flex justify-center my-12 w-full items-center ">
                 <div class="w-full text-end px-8 container">
                     <h1 class="text-3xl mb-8 font-bold tracking-tight text-gray-900 md:text-center sm:text-4xl/snug md:text-7xl/snug lg:text-5xl/loose welcome wsau text-right"
-                        dir="rtl">ویژگی ما چیست؟</h1><br>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
-                        جرات
-                        بگوییم که ما بهترین برچسب ها و
-                        باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیم</p>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
-                        جرات
-                        بگوییم که ما بهترین برچسب ها و
-                        باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیsdfsadfasd fasd fasd f
-                        asdf asdf asdfasd fasd fasd fasdh filasdh ifhasuildh failshd م</p>
-                    <p class="wsau text-right" dir="rtl">ما بینظیر ترین درب های دنیا را درست میکنیم و میتوانیم با
-                        جرات
-                        بگوییم که ما بهترین برچسب ها و
-                        باکیفیت تین چوب ها را در ساخت درب های خود به کار میبریم و استفاده میکنیم</p>
-                    <p class="wsau text-right" dir="rtl">چوب ما بهرتین چوب میباشد</p>
-                    <div class="divider divider-primary">تضمین کار ما در</div>
+                        dir="rtl">تولید های wpercianc چیست؟</h1><br>
+                    <p class="wsau text-right" dir="rtl">
+                        تولیدات این شرکت متشکل از پروفیل های indoor بر چهار فضای داخل و پروفیل های outdoor برای فضای خارجی و پرتودو است. همچنین این مجموعه قادر است در حداقل زمان بنا بر مشخصات فنی و رقابتی پروفیل مورد نظر مشتری را در کشور مورد نظر با دانش قنی و تحقیقات زیادی, قالب های مخصوص را طراحی و بسازد. با توجه به تنوع بالای قالب های قابل تولید پروفیل این مجموعه حدودا 400 قالب دارد که امکان استفاده در تمامی موارد مربوط به ساختمان قابل اجراست.
+                    </p>
+                    <div class="divider divider-primary"><h2 class="font-bold text-lg">محصولات ما</h2></div>
                     <div class="my-16 flex flex-col justify-center items-center lg:flex-row gap-10"
                         data-aos="fade-down-right">
                         <div class="w-48 atropos my-atropos shadow-lg">
@@ -271,17 +257,17 @@
                             </div>
                         </div>
                         <div class="text-center lg:text-end self-center w-full">
-                            <h2 class="text-4xl font-bold">کیفیت</h2><br>
-                            <p>میتوانید از میزان کیفیت ما با اطمینان حاصل نمایید و نظر مشتریان راضی ما را از زیر بخوانید
+                            <h2 class="text-4xl font-bold">wpercianc (indoor)</h2><br>
+                            <p>درب, چهار چوب, قرنیز, دیوار پوش, کف پوش, ابزار الات
                             </p>
                         </div>
                     </div>
                     <div class="my-36 flex flex-col-reverse justify-center items-center lg:flex-row gap-10"
                         data-aos="fade-down-left">
                         <div class="text-center lg:text-start self-center w-full">
-                            <h2 class="text-4xl font-bold">خدمات</h2><br>
-                            <p>میتوانید از میزان کیفیت ما با اطمینان حاصل نمایید و نظر مشتریان راضی ما را از زیر بخوانید
-                            </p>
+                            <h2 class="text-4xl font-bold">wpercianc (outdoor)</h2><br>
+                            <p>نمای ساختمان, کف, دیوارپوش , قوطی, اتصالات جانی
+                        </p>
                         </div>
                         <div class="w-48 atropos my-atropos-2 shadow-lg">
                             <div class="atropos-scale">
@@ -303,33 +289,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-36 mb-2 flex flex-col justify-center items-center lg:flex-row gap-10"
-                        data-aos="fade-down-right">
-                        <div class="w-48 atropos my-atropos-3 shadow-lg">
-                            <div class="atropos-scale">
-                                <div class="atropos-rotate animate-glow">
-                                    <div data-atropos-offset="-10"
-                                        class="absolute -bottom-3 -left-7 w-20 h-20 rounded-full bg-gradient-to-br from-orange-500 to-yellow-400 border-black border-2 z-30">
-                                    </div>
-                                    <div data-atropos-offset="-5"
-                                        class="absolute -top-6 -right-4 w-24 h-24 rounded-full bg-gradient-to-br from-orange-500 to-yellow-400 border-black border-2">
-                                    </div>
-                                    <div class="atropos-inner">
-                                        <div class="relative w-48 h-48 flex justify-center items-center bg-white shadow-black shadow-lg rounded-lg border-black border-2"
-                                            data-atropos-offset="0">
-                                            <span class="font-extrabold text-6xl" data-atropos-offset="5">3
-                                            </span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center lg:text-end self-center w-full">
-                            <h2 class="text-4xl font-bold">خدمات</h2><br>
-                            <p>میتوانید از میزان کیفیت ما با اطمینان حاصل نمایید و نظر مشتریان راضی ما را از زیر بخوانید
-                            </p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
@@ -428,10 +388,8 @@
                 <div class="grid grid-flow-col gap-6 mt-8 px-2">
                     <a href="/about" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">درباره
                         ما</a>
-                    <a href="contact" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">ارتباط
+                    <a href="/contactus" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">ارتباط
                         با ما</a>
-                    <a href="/laws" class="link link-hover text-black hover:text-amber-300 text-lg font-bold">قوانین
-                        سایت</a>
                 </div>
                 <div>
                     <div class="flex justify-center space-x-8">

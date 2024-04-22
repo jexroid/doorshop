@@ -22,3 +22,6 @@ Route::get('/about', function () {
     return view('about');
 });
 
+Route::get('/contactus', function () {
+    return view('/contact');
+});
