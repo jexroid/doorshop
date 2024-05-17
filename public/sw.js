@@ -1,7 +1,10 @@
-const VERSION = 2;
+const VERSION = 1;
 const cacheName = 'static'
 const cacheItems= [
-    '/',
+    '/en',
+    '/en/about_us',
+    '/en/store',
+    '/en/contact_us',
     '/logo.webp',
     '/click.ogg',
     '/generic.ogg',
