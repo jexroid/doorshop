@@ -1,6 +1,6 @@
 const VERSION = 1.1;
 const cacheName = 'static'
-const cacheItems= [
+const cacheItems = [
     '/en',
     '/en/about_us',
     '/en/store',
@@ -16,7 +16,7 @@ const cacheItems= [
     '/logo.webp',
     '/click.ogg',
     '/generic.ogg',
-    
+
 ]
 
 this.addEventListener('install', event => {
@@ -27,11 +27,16 @@ this.addEventListener('install', event => {
     )
 })
 
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.ready.then(function (registration) {
+        registration.update();
+    });
+}
 
 this.addEventListener('fetch', event => {
     event.respondWith(
         caches.match(event.request).then(response => {
             return response || fetch(event.request)
         })
-        )
+    )
 })
