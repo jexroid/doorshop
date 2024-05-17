@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ShopController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,14 +15,45 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/en');
 });
 
 
-Route::get('/about', function () {
-    return view('about');
+Route::get('/{lang}', function (string $lang) {
+    if (in_array($lang, ['en', 'ar', 'tr', 'ru', 'fa'])) {
+        app()->setLocale($lang);
+        return view('welcome');
+    }
+    return abort(404);
 });
 
-Route::get('/contactus', function () {
-    return view('/contact');
+
+Route::get('/{lang}/about_us', function (string $lang) {
+    if (in_array($lang, ['en', 'ar', 'tr', 'ru', 'fa'])) {
+        app()->setLocale($lang);
+        return view('about');
+    }
+    return abort(404);
+
 });
+
+Route::get('/{lang}/contact_us', function (string $lang) {
+    if (in_array($lang, ['en', 'ar', 'tr', 'ru', 'fa'])) {
+        app()->setLocale($lang);
+        return view('contact');
+    }
+    return abort(404);
+});
+
+// Route::get('/{lang}/services', function (string $lang) {
+//     if (in_array($lang, ['en', 'ar', 'tr', 'ru', 'fa'])) {
+//         app()->setLocale($lang);
+//         return view('shop');
+//     }
+//     return abort(404);
+// });
+
+// how get parameter and pass it to controller
+
+
+Route::get('/{lang}/store', [ShopController::class, 'index']);

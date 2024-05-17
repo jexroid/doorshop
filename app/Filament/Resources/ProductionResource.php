@@ -22,7 +22,7 @@ use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\Section;
 
-class ProductionResource extends Resource
+class ProductionResource extends Resource 
 {
     protected static ?string $model = Product::class;
 
@@ -48,9 +48,13 @@ class ProductionResource extends Resource
                         ])
                 ]),
                 FileUpload::make('image')
-                ->image()
-                ->label('عکس محصول'),
-                Toggle::make('انتشار'),
+                    ->required()
+                    ->image()
+                    ->imageEditor()
+                    ->uploadingMessage('درحال اپلود')
+                    ->label('عکس محصول'),
+                Toggle::make('انتشار')
+                    ->required(),
             ]);
     }
 

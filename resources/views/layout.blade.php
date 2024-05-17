@@ -4,124 +4,102 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/logo.webp" />
+    <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="{{ @asset('css/app.css') }}">
     <title>@yield('title')</title>
     @yield('assets')
-
 </head>
 
 <body class="overflow-x-hidden">
+    <style>.loadng{position:fixed;top:0;left:0;width:100%;height:100%;background:#fff;z-index:9999}.hidein{opacity:0;transition-property:opacity;transition-duration:.5s;transition-timing-function:ease-in-out;pointer-events:none}.loadng-text{position:absolute;top:0;bottom:0;left:0;right:0;margin:auto;text-align:center;width:100%;height:100px;line-height:100px}.loadng-text span{display:inline-block;margin:0 5px;color:#000;font-family:Quattrocento Sans,sans-serif}.loadng-text span:nth-child(1){filter:blur(0px);animation:blur-text 1.5s 0s infinite linear alternate}.loadng-text span:nth-child(2){filter:blur(0px);animation:blur-text 1.5s .2s infinite linear alternate}.loadng-text span:nth-child(3){filter:blur(0px);animation:blur-text 1.5s .4s infinite linear alternate}.loadng-text span:nth-child(4){filter:blur(0px);animation:blur-text 1.5s .6s infinite linear alternate}.loadng-text span:nth-child(5){filter:blur(0px);animation:blur-text 1.5s .8s infinite linear alternate}.loadng-text span:nth-child(6){filter:blur(0px);animation:blur-text 1.5s 1s infinite linear alternate}.loadng-text span:nth-child(7){filter:blur(0px);animation:blur-text 1.5s 1.2s infinite linear alternate}@keyframes blur-text{0%{filter:blur(0px)}to{filter:blur(4px)}}</style>
     <header>
         <nav
             class="navbar bg-base-100 shadow-lg fixed z-10 rounded-b-3xl bg-gradient-to-bl from-[#FF9153] to-[#FFD143] border-gray-200">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 gap-9">
-                <div class=" rounded-full">
+                <div class="rounded-full">
                     <img src="/logo.webp" class="w-24 " alt="wpcpersian Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-black"></span>
                 </div>
-                <div class="flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
-                    <button type="button" data-dropdown-toggle="language-dropdown-menu"
-                        class="inline-flex items-center font-medium justify-center px-4 py-2 text-sm text-gray-900 dark:text-black rounded-lg cursor-pointer hover:bg-gray-100 dark:hover:bg-gray-700 dark:hover:text-black">
-                        <svg class="w-5 h-5 rounded-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3900 3900">
-                            <path fill="#b22234" d="M0 0h7410v3900H0z" />
-                            <path d="M0 450h7410m0 600H0m0 600h7410m0 600H0m0 600h7410m0 600H0" stroke="#fff"
-                                stroke-width="300" />
-                            <path fill="#3c3b6e" d="M0 0h2964v2100H0z" />
-                            <g fill="#fff">
-                                <g id="d">
-                                    <g id="c">
-                                        <g id="e">
-                                            <g id="b">
-                                                <path id="a"
-                                                    d="M247 90l70.534 217.082-184.66-134.164h228.253L176.466 307.082z" />
-                                                <use xlink:href="#a" y="420" />
-                                                <use xlink:href="#a" y="840" />
-                                                <use xlink:href="#a" y="1260" />
-                                            </g>
-                                            <use xlink:href="#a" y="1680" />
-                                        </g>
-                                        <use xlink:href="#b" x="247" y="210" />
-                                    </g>
-                                    <use xlink:href="#c" x="494" />
-                                </g>
-                                <use xlink:href="#d" x="988" />
-                                <use xlink:href="#c" x="1976" />
-                                <use xlink:href="#e" x="2470" />
-                            </g>
-                        </svg>
-                        English (US)
-                    </button>
-                    <!-- Dropdown -->
-                    <div class="z-50 hidden my-4 text-base list-none bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-700"
-                        id="language-dropdown-menu">
-                        <ul class="py-2 font-medium" role="none">
+                <div
+                    class="dropdown dropdown-bottom flex items-center md:order-2 space-x-1 md:space-x-0 rtl:space-x-reverse">
+                    <div tabindex="0" role="button" class="btn glass m-1 flex flex-row justify-center items-center">
+                        <img src="@lang('messages.flag')" class="w-5 h-5 rounded-full" alt="">
+                        <div>@lang('messages.language')</div>
 
-                            <li>
-                                <a href="#"
-                                    class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-600 dark:hover:text-black"
-                                    role="menuitem">
-                                    <div class="inline-flex items-center">
-                                        <svg class="h-3.5 w-3.5 rounded-full me-2" aria-hidden="true"
-                                            xmlns="http://www.w3.org/2000/svg"
-                                            xmlns:xlink="http://www.w3.org/1999/xlink" id="flag-icon-css-cn"
-                                            viewBox="0 0 512 512">
-                                            <defs>
-                                                <path id="a" fill="#ffde00" d="M1-.3L-.7.8 0-1 .6.8-1-.3z" />
-                                            </defs>
-                                            <path fill="#de2910" d="M0 0h512v512H0z" />
-                                            <use width="30" height="20" transform="matrix(76.8 0 0 76.8 128 128)"
-                                                xlink:href="#a" />
-                                            <use width="30" height="20"
-                                                transform="rotate(-121 142.6 -47) scale(25.5827)" xlink:href="#a" />
-                                            <use width="30" height="20"
-                                                transform="rotate(-98.1 198 -82) scale(25.6)" xlink:href="#a" />
-                                            <use width="30" height="20"
-                                                transform="rotate(-74 272.4 -114) scale(25.6137)" xlink:href="#a" />
-                                            <use width="30" height="20"
-                                                transform="matrix(16 -19.968 19.968 16 256 230.4)" xlink:href="#a" />
-                                        </svg>
-                                        中文 (繁體)
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
                     </div>
-                    <button data-collapse-toggle="navbar-language" type="button"
-                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black0 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                        aria-controls="navbar-language" aria-expanded="false">
-                        <span class="sr-only">منو</span>
-                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                            viewBox="0 0 17 14">
-                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
+                    <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                        <li>
+                            <a href="/en" class="flex flex-row justify-center items-center">
+                                <img src="/img/uk.webp" class="w-5 h-5 rounded-full" alt="">
+                                <div>
+                                    English
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/ar" class="flex flex-row justify-center items-center">
+                                <img src="/img/ar.webp" class="w-5 h-5 rounded-full" alt="">
+                                <div>
+                                    العربیه
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/tr" class="flex flex-row justify-center items-center">
+                                <img src="/img/tr.webp" class="w-5 h-5 rounded-full" alt="">
+                                <div>
+                                    Türkçe
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/ru" class="flex flex-row justify-center items-center">
+                                <img src="/img/ru.webp" class="w-5 h-5 rounded-full" alt="">
+                                <div>
+                                    русский язык
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="/fa" class="flex flex-row justify-center items-center">
+                                <img src="/img/fa.webp" class="w-5 h-5 rounded-full" alt="">
+                                <div>
+                                    فارسی
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
                 <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
                     id="navbar-language">
                     <ul
                         class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0    dark:border-gray-700">
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
-                                aria-current="page">Home</a>
+                            <a href="/@lang('messages.lang')"
+                                class="block  py-2 px-3 text-black rounded md:bg-transparent  md:p-0 md:hover:text-blue-700"
+                                aria-current="page">@lang('messages.menu_home')</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">About</a>
+                            <a href="/@lang('messages.lang')/about_us"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.menu_about')</a>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Services</a>
+                            <div class="dropdown">
+                            <div tabindex="0" role="button" class=" block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.menu_shop')</div>
+                                <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
+                                    <li class="py-2 px-3"><a href="/@lang('messages.lang')/store"
+                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.menu_shop')</a></li>
+                                    <li class="py-2 px-3"><a href="/@lang('messages.lang')/store"
+                                    class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.menu_shop')</a></li>
+                                </ul>    
+                            
+                            </div>
                         </li>
                         <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                            <a href="/@lang('messages.lang')/contact_us"
+                                class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 dark:text-black md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700">@lang('messages.menu_contact')</a>
                         </li>
                     </ul>
                 </div>
@@ -140,7 +118,7 @@
             <span class="loadng-text-words">G</span>
         </div>
     </div>
-    <div class="w-full min-h-32"> </div>
+    <div class="w-full min-h-30"> </div>
     <div id="mute"
         class="fixed btn h-14 blue-background bg-white btn-outline hover:bg-white rounded-full right-5 z-50">
         <svg id="sound-off" style="display: none;" width="24" height="24" xmlns="http://www.w3.org/2000/svg"
@@ -157,5 +135,58 @@
     @yield('content')
 
     <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        
+function clickEffect(e) {
+    var d = document.createElement("div");
+    d.className = "clickEffect";
+    d.style.top = e.clientY + "px"; d.style.left = e.clientX + "px";
+    document.body.appendChild(d);
+    d.addEventListener('animationend', function () { d.parentElement.removeChild(d); }.bind(this));
+}
+document.addEventListener('click', clickEffect);
+let whatisthedevice = navigator.userAgent
+const cursor = document.getElementById('cursor');
+if (whatisthedevice.match(/Android/i)
+    || whatisthedevice.match(/webOS/i)
+    || whatisthedevice.match(/iPhone/i)
+    || whatisthedevice.match(/iPad/i)
+    || whatisthedevice.match(/iPod/i)
+    || whatisthedevice.match(/BlackBerry/i)
+    || whatisthedevice.match(/Windows Phone/i)) {
+    cursor.style.visibility = 'hidden'
+} else {
+    const body = document.body;
+    // Update circle position on mouse movement
+    body.addEventListener('mousemove', (event) => {
+        cursor.style.left = event.clientX + 'px';
+        cursor.style.top = event.clientY + 'px';
+    });
+}
+
+// toggling mute Button
+const svgOne = document.getElementById('sound-on')
+const svgTwo = document.getElementById('sound-off')
+
+function toggleSVGs(clickedSVG) {
+    if (clickedSVG === svgOne) {
+        svgOne.style.display = 'none';
+        svgTwo.style.display = 'block';
+    } else {
+        svgOne.style.display = 'block';
+        svgTwo.style.display = 'none';
+    }
+}
+
+svgOne.addEventListener('click', () => toggleSVGs(svgOne));
+svgTwo.addEventListener('click', () => toggleSVGs(svgTwo));
+
+const loadingScreen = document.getElementById('loader');
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    loadingScreen.classList.add('hidein')
+})
+    </script>
 </body>
 </html>

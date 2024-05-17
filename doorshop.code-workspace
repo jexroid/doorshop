@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../Frontend/doorshop"
+		}
+	],
+	"settings": {
+		"ipynb.pasteImagesAsAttachments.enabled": false
+	}
+}
