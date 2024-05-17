@@ -29,6 +29,7 @@ this.addEventListener('install', event => {
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.ready.then(function (registration) {
+        console.log('service worker updated', registration)
         registration.update();
     });
 }

@@ -87,7 +87,7 @@
             <div class="flex justify-center">
                 <ul
                     class="px-5 container hide-scrollbar overflow-x-auto gap-5 overflow-y-hidden flex flex-nowrap py-3 justify-stretch overflow-hidden">
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/1.png') }}"
@@ -102,7 +102,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/2.png') }}"
@@ -117,7 +117,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/3.png') }}"
@@ -132,7 +132,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/4.png') }}"
@@ -147,7 +147,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/5.png') }}"
@@ -162,7 +162,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/6.png') }}"
@@ -177,7 +177,7 @@
                             </div>
                         </div>
                     </a>
-                    <a href="" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
+                    <a href="/@lang('messages.lang')/store" class="inline-block shoplist relative overflow-hidden grow h-full shrink-0 ml-1">
                         <div class="card w-56 bg-base-100 shadow-xl">
                             <figure>
                                 <img src="{{ asset('img/7.png') }}"
