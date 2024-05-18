@@ -14,14 +14,13 @@
 
 @section('assets')
 <script type="module" crossorigin src="{{ asset('js/index.js') }}"></script>
-<link rel="stylesheet" crossorigin href="{{ asset('css/index.css') }}">
+<!-- <link rel="stylesheet" crossorigin href="{{ asset('css/index.css') }}"> -->
 @endsection
 
 @section('content')
-<main class="mt-14">
+<main class="pt-14">
     <div id="particles-js"></div>
     <section class="">
-
         <div class="w-28 h-28 bg-[#f9dc03c7] blur-3xl absolute right-96 top-28 hidden lg:block rounded-badge">
         </div>
         <div class="w-44 h-28 bg-[#f9d403ce] blur-3xl absolute left-12 bottom-48 hidden lg:block rounded-badge">
@@ -30,7 +29,8 @@
             <div class="swiper w-72 h-72 rounded-md image border border-black">
                 <div class="swiper-wrapper">
                     <img class="swiper-slide" src="/img/photo_2024-04-22_21-31-19.jpg" />
-                    <img class="swiper-slide" src="/img/photo_2024-04-22_21-31-25.jpg" />
+                    <img class="swiper-slide" src="/img/4.png" />
+                    <img class="swiper-slide" src="/img/3.png" />
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
@@ -240,7 +240,7 @@
                 <p class="wsau text-right" @php echo $direction @endphp>
                     @lang('sections.product')
                 </p>
-                <div class="divider divider-primary">
+                <div class="divider">
                     <h2 class="font-bold text-lg" @php echo $direction @endphp>@lang('sections.our_product')</h2>
                 </div>
                 <div class="my-16 flex flex-col justify-center items-center lg:flex-row gap-10"
@@ -257,7 +257,7 @@
                                 <div class="atropos-inner">
                                     <div class="relative w-48 h-48 flex justify-center items-center bg-white shadow-black shadow-lg rounded-lg border-black border-2"
                                         data-atropos-offset="0">
-                                        <span class="font-extrabold text-6xl" data-atropos-offset="5">1
+                                        <span class="" data-atropos-offset="5"><a class="btn rounded-lg font-extrabold bg-gradient-to-br from-orange-500 to-yellow-400" href="/@lang('messages.lang')/store">@lang('messages.buy')</a>
                                         </span>
                                     </div>
                                 </div>
@@ -289,7 +289,7 @@
                                 <div class="atropos-inner">
                                     <div class="relative w-48 h-48 flex justify-center items-center bg-white shadow-black shadow-lg rounded-lg border-black border-2"
                                         data-atropos-offset="0">
-                                        <span class="font-extrabold text-6xl" data-atropos-offset="5">2
+                                        <span class="" data-atropos-offset="5"><a class="btn rounded-lg font-extrabold bg-gradient-to-br from-orange-500 to-yellow-400" href="/@lang('messages.lang')/store">@lang('messages.buy')</a>
                                         </span>
                                     </div>
                                 </div>

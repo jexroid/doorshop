@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-    <main>
+    <main class="pt-7">
         <section>
             <div class="hero " style="background-image: url(../img/img7.jpg);">
                 <div class="hero-overlay bg-opacity-60"></div>

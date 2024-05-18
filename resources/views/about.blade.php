@@ -9,17 +9,17 @@
 @endsection()
 
 @section('content')
-    <main>
+    <main class="pt-7">
         <section>
             <div class="hero" style="background-image: url(/img/img4.jpg);">
                 <div class="hero-overlay bg-opacity-60"></div>
                 <div class="hero-content text-center text-neutral-content">
                     <div class="max-w-md">
-                        <h1 class="mb-5 text-5xl font-bold">wpc.com</h1>
-                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        <h1 class="mb-5 text-5xl font-bold">wpersianc.com</h1>
+                        <!-- <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
                             exercitationem
                             quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                        <button class="hover-btn btn btn-primary text-black">شروع کنید</button>
+                        <button class="hover-btn btn btn-primary text-black">شروع کنید</button> -->
                     </div>
                 </div>
             </div>
@@ -149,7 +149,7 @@
                     شرکت ما کجاست؟
                 </div>
                 <div class="collapse-content">
-                    <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    <p>ایران تهران خیابان قلعه مید بین آزادگان و مفتح</p>
                 </div>
             </div>
         </section>
@@ -160,7 +160,7 @@
                     چگونه سفارش دهیم؟
                 </div>
                 <div class="collapse-content">
-                    <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    <p>شما با کلیک بر روی محصولات میتوانید سفارش خود را ثبت کنید</p>
                 </div>
             </div>
         </section>
@@ -171,7 +171,7 @@
                     رزومه و خدمات شرکت ما چیست؟
                 </div>
                 <div class="collapse-content">
-                    <p>tabindex="0" attribute is necessary to make the div focusable</p>
+                    <p>با ورود به صفحه ی</p>
                 </div>
             </div>
 

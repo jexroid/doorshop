@@ -5,7 +5,11 @@ export default {
     "./resources/**/*.css",
   ],
   theme: {
-    extend: {},
+    extend: {
+      color: {
+        'myyellow' : "#F9DB03"
+      }
+    },
   },
   plugins: [require("daisyui")],
   daisyui: {
