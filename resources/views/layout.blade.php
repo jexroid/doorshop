@@ -57,8 +57,8 @@
                         <details>
                             <summary>@lang('messages.menu_shop')</summary>
                             <ul class="p-2">
-                                <li><a>Indoor</a></li>
-                                <li><a>Outdoor</a></li>
+                                <li><a href="/@lang('messages.lang')/store">Indoor</a></li>
+                                <li><a href="/@lang('messages.lang')/store">Outdoor</a></li>
                             </ul>
                         </details>
                     </li>
