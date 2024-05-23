@@ -3013,29 +3013,6 @@ details.collapse summary::-webkit-details-marker {
   background-repeat: no-repeat;
 }
 
-.rang2{
-  background: radial-gradient( circle farthest-corner at 10% 20%, rgba(37, 130, 251, 0.98) 0.1%, rgb(81, 0, 128) 99.8% );
-}
-
-.hover-btn {
-  background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );
-  color: #ffffff;
-  /* رنگ متن دکمه */
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  transition: box-shadow 0.3s ease;
-  /* انیمیشن تغییر سایه زمانی که هاور اتفاق می‌افتد */
-  position: relative;
-  /* تغییر موقعیت دکمه به relative برای استفاده از box-shadow */
-}
-
-.hover-btn:hover {
-  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.7);
-  /* ایجاد سایه به عنوان نور هنگام هاور */
-  background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,209,67,1) 0%, rgba(255,145,83,1) 90% );
-}
-
 .hover\:-translate-y-4:hover {
   --tw-translate-y: -1rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3168,5 +3145,4 @@ details.collapse summary::-webkit-details-marker {
     display: none;
   }
 }
-
 

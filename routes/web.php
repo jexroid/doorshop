@@ -55,5 +55,6 @@ Route::get('/{lang}/contact_us', function (string $lang) {
 
 // how get parameter and pass it to controller
 
+Route::get('/{lang}/indoor', [ShopController::class, 'indoor']);
 
-Route::get('/{lang}/store', [ShopController::class, 'index']);
+Route::get('/{lang}/outdoor', [ShopController::class, 'outdoor']);
