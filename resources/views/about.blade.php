@@ -29,13 +29,11 @@
     </section>
     <section>
         <div
-            class="container flex justify-center  relative px-4  flex-wrap gap-12 mt-10 lg:left-20 sm:flex-wrap md:flex-wrap">
+            class="container flex justify-center relative px-4 flex-wrap gap-12 mt-10 lg:left-20 sm:flex-wrap md:flex-wrap">
             <div class="stack">
                 <div class="card shadow-md bg-gradient-to-br from-[#FF9153] to-[#FFD143] text-primary-content">
                     <div class="card-body ">
-                        <img src="/img/photo_2024-04-02_23-42-12.jpg" class="w-full h-full object-cover blur-sm "
-                            alt="Notification Image">
-                        <h2 class="card-title absolute top-2 left-2 text-white ">20 سال سابقه کار</h2>
+                        <img src="/img/1123.jpg" class="w-330 object-cover " alt="Notification Image">
                     </div>
                 </div>
 
@@ -53,9 +51,8 @@
             <div class="stack">
                 <div class="card shadow-md bg-gradient-to-br from-[#FF9153] to-[#FFD143] text-primary-content">
                     <div class="card-body">
-                        <img src="/img/photo_2024-04-02_23-42-12.jpg" class="w-full h-full object-cover blur-sm"
+                        <img src="/img/photo_2024-03-31_18-45-20.jpg" class="w-330 object-cover"
                             alt="Notification Image">
-                        <h2 class="card-title absolute top-2 left-2 text-white">Notification 1</h2>
                     </div>
                 </div>
 
@@ -74,9 +71,7 @@
             <div class="stack">
                 <div class="card shadow-md bg-gradient-to-br from-[#FF9153] to-[#FFD143] text-primary-content">
                     <div class="card-body">
-                        <img src="/img/images (1).jpg" class="w-full h-full object-cover blur-sm"
-                            alt="Notification Image">
-                        <h2 class="card-title absolute top-2 left-2 text-white">Notification 1</h2>
+                        <img src="/img/images (1).jpg" class="w-330 object-cover" alt="Notification Image">
                     </div>
                 </div>
 
@@ -92,25 +87,10 @@
                     </div>
                 </div>
             </div>
-            <script>
-                const cards = document.querySelectorAll(".card");
-
-                cards.forEach(card => {
-                    card.addEventListener("mouseenter", () => {
-                        const img = card.querySelector("img");
-                        img.classList.remove("blur-sm");
-                    });
-
-                    card.addEventListener("mouseleave", () => {
-                        const img = card.querySelector("img");
-                        img.classList.add("blur-sm");
-                    });
-                });
-            </script>
     </section>
 
     <section class="flex justify-center mt-12">
-        <h2 class="text-lg text-wrap" id="product-title"> چرا ما؟</h2>
+        <h2 class="text-lg text-wrap" id="product-title">@lang('about.why_us')</h2>
         <script>
             const titleElement = document.getElementById("product-title");
 
@@ -142,14 +122,14 @@
         </script>
     </section>
 
-    <section class="mt-10 px-28">
+    <section class="mt-2 px-24">
         <div tabindex="0"
-            class="collapse bg-gradient-to-tr from-[#ff8741] to-[#ffc002]  text-primary-content focus:bg-orange-500 focus:text-secondary-content">
+            class="collapse bg-gradient-to-tl from-[#FF9153] to-[#FFD143] text-primary-content focus:bg-secondary focus:text-secondary-content">
             <div class="collapse-title font-bold">
-                شرکت ما کجاست؟
+                @lang('about.pricing')
             </div>
             <div class="collapse-content">
-                <p>ایران تهران خیابان قلعه مید بین آزادگان و مفتح</p>
+                <p>@lang('about.pricing_content')</p>
             </div>
         </div>
     </section>
@@ -157,25 +137,25 @@
         <div tabindex="0"
             class="collapse bg-gradient-to-tl from-[#FF9153] to-[#FFD143] text-primary-content focus:bg-secondary focus:text-secondary-content">
             <div class="collapse-title font-bold">
-                چگونه سفارش دهیم؟
+                @lang('about.Innovation')
             </div>
             <div class="collapse-content">
-                <p>شما با کلیک بر روی محصولات میتوانید سفارش خود را ثبت کنید</p>
+                <p>@lang('about.Innovation_content')</p>
             </div>
         </div>
     </section>
-    <section class="mt-2 px-20">
+    <section class="mt-2 px-24">
         <div tabindex="0"
-            class="collapse bg-gradient-to-br from-[#cf713a] to-[#f8d467] text-primary-content focus:bg-orange-300 focus:text-secondary-content">
-            <div class="collapse-title  font-bold">
-                رزومه و خدمات شرکت ما چیست؟
+            class="collapse bg-gradient-to-tl from-[#FF9153] to-[#FFD143] text-primary-content focus:bg-secondary focus:text-secondary-content">
+            <div class="collapse-title font-bold">
+                @lang('about.design')
             </div>
             <div class="collapse-content">
-                <p>با ورود به صفحه ی</p>
+                <p>@lang('about.design_content')</p>
             </div>
         </div>
-
     </section>
+
 </main>
 
 <footer class="bg-white overflow-y-hidden rounded-t-2xl text-black p-4 max-w-full">
